@@ -2,6 +2,7 @@ package com.example.l;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,21 +10,37 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Stories extends AppCompatActivity {
-    Button btn_anbyaa_stories , btn_tarbawya_stories,btn_interesting_stories;
-    ImageView back_story;
+    ImageView btn_anbyaa_stories , btn_educatioal_stories,btn_entertainment_stories;
+  //  ImageView back_story;
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stories);
+        btn_anbyaa_stories = findViewById(R.id.img_anbya_stories);
+        btn_educatioal_stories = findViewById(R.id.img_edu_stories);
+        btn_entertainment_stories = findViewById(R.id.img_ent_stories);
 
-back_story=findViewById(R.id.img_blue_airshi2);
-back_story.setOnClickListener(new View.OnClickListener() {
+       btn_anbyaa_stories.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Intent intent=new Intent(Stories.this,Anbyaa_Stories.class);
         startActivity(intent);
-
     }
-});
+    });
+       btn_educatioal_stories.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent=new Intent(Stories.this,Educational_Stories.class);
+               startActivity(intent);
+           }
+       });
+        btn_entertainment_stories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Stories.this,Entertainment_Stories.class);
+                startActivity(intent);
+            }
+        });
     }
 }

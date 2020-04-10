@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
-
-
             }
         });
         img_quran.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             //Arwa
             public void onClick(View v) {
                 mediaPlayer.start();
-
             }
         });
     }}

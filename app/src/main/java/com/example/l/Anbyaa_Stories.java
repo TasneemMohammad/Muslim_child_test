@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class Anbyaa_Stories extends AppCompatActivity {
     RecyclerView rv_anbyaa_stories ;
-
     DataBase_Stories db ;
     ArrayList<Stories_Card> Stories;
     @Override
