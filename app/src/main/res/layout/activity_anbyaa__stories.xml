@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Anbyaa_Stories"
-    android:background="@drawable/storydes">
+    android:background="@drawable/boy">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_anbyaa_stories"

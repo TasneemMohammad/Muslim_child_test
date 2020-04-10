@@ -16,7 +16,7 @@ public class Stories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stories);
 
-back_story=findViewById(R.id.back_story);
+back_story=findViewById(R.id.img_blue_airshi2);
 back_story.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {

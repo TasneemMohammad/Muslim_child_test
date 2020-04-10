@@ -10,16 +10,16 @@
     <ImageView
         android:id="@+id/btn_quran"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         android:layout_alignParentBottom="true"
-android:paddingBottom="10dp"
+
 
         android:src="@drawable/quran" />
 
     <ImageView
         android:id="@+id/btn_stories"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
         android:layout_alignParentBottom="true"
 android:paddingTop="35dp"
         android:layout_toRightOf="@+id/btn_quran"
@@ -28,21 +28,20 @@ android:paddingTop="35dp"
 
     <ImageView
         android:id="@+id/btn_azkar"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="200dp"
         android:layout_alignParentBottom="true"
-android:layout_marginRight="10dp"
         android:layout_toRightOf="@+id/btn_stories"
-        android:src="@drawable/azkar" />
+        android:src="@drawable/azkaar" />
 
     <ImageView
         android:id="@+id/btn_anasheed"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/btn_azkar"
         android:src="@drawable/anasheed"
-        android:paddingBottom="10dp"/>
+       />
 
 
 </RelativeLayout>

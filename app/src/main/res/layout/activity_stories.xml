@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Stories"
     android:orientation="vertical"
-android:background="@drawable/bac_story"
+    android:background="@drawable/backgroundstories"
     >
-<ImageView
+    <ImageView
+        android:id="@+id/img_blue_airship"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/blueairship"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="200dp" />
+    <ImageView
+        android:id="@+id/img_blue_airshi2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/blueairship"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="120dp" />
 
-    android:id="@+id/back_story"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
 
 <!--    <androidx.cardview.widget.CardView-->
 <!--        android:id="@+id/anbyaa_stories"-->
