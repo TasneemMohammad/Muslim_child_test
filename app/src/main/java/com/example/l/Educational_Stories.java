@@ -26,20 +26,33 @@ public class Educational_Stories extends AppCompatActivity {
         Stories_Card story3 = new Stories_Card("قصة الأسد والأرنب" ,R.drawable.icon);
         Stories_Card story4 = new Stories_Card("قصة الأسد والأرنب" ,R.drawable.icon);
         Stories_Card story5 = new Stories_Card("قصة الأسد والأرنب" ,R.drawable.icon);
-        Stories = db.getAllStories();
-        Recycler_Adapter_Stories adapter_stories = new Recycler_Adapter_Stories(Stories, new OnClickListener_Stories() {
-            @Override
-            public void onClick(int position) {
-                Intent intent = new Intent(Educational_Stories.this,webView_Stories.class);
-                intent.putExtra("page",position);
-                intent.putExtra("sound",position);
-                startActivity(intent);
-            }});
         db.insertStory(story1);
         db.insertStory(story2);
         db.insertStory(story3);
         db.insertStory(story4);
         db.insertStory(story5);
-        rv_educational_stories.setAdapter(adapter_stories);
+        Stories = db.getAllStories();
+        Recycler_Adapter_Stories adapter_stories = new Recycler_Adapter_Stories(Stories, new OnClickListener_Stories() {
+            @Override
+            public void onClick(int position) {
+
+            }
+        });
+      /*  Recycler_Adapter_Stories adapter_stories = new Recycler_Adapter_Stories(Educational_Stories.this, Stories, new OnClickListener_Stories() {
+            @Override
+            public void onClick(int[] MP3Sounds) {
+            }
+        }
+        ); */
+            /*
+            @Override
+            public void onClick(int position) {
+                Intent intent = new Intent(Educational_Stories.this, webView_AnbyaaStories.class);
+                intent.putExtra("page",position);
+                intent.putExtra("sound",position);
+                startActivity(intent);
+            }});  */
+
+     //   rv_educational_stories.setAdapter(adapter_stories);
         rv_educational_stories.setLayoutManager(new LinearLayoutManager(Educational_Stories.this));
     }}

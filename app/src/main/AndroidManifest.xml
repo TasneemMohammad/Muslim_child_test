@@ -12,20 +12,15 @@
         <activity android:name=".Educational_Stories"></activity>
         <activity android:name=".Entertainment_Stories" />
         <activity android:name=".splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Anbyaa_Stories" />
-        <activity android:name=".webView_Stories" />
+        <activity android:name=".webView_AnbyaaStories" />
         <activity android:name=".Quran" />
         <activity android:name=".Azkar_A7adeeth" />
         <activity android:name=".Stories" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation= "fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
