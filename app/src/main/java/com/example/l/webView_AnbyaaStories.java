@@ -45,7 +45,6 @@ public class webView_AnbyaaStories extends AppCompatActivity {
         progressDialog.show();
 
         web_stories.setWebViewClient(new WebViewClient() {
-
             public void onPageFinished(WebView view, String url) {
                 try {
                     progressDialog.dismiss();
@@ -111,8 +110,6 @@ public class webView_AnbyaaStories extends AppCompatActivity {
             int tim0 = (seekBar.getProgress() / 1000);
             int m0 = tim0 / 60 ;
             int s0 = tim0 % 60 ; } */
-
-
 
 /*private void init(){
  webview = (WebView)findViewById(R.id.webview); */
