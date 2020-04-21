@@ -26,7 +26,6 @@
                  android:layout_width="match_parent"
                  android:layout_height="30dp"
                  android:textColor="#68230E"
-
                  android:layout_marginTop="10dp"
                  android:layout_alignParentRight="true"
                  android:textSize="20dp"
