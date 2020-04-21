@@ -61,7 +61,7 @@ public class webView_AnbyaaStories extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                sound.start();
-               Toast.makeText(webView_AnbyaaStories.this,"test",Toast.LENGTH_SHORT);
+               Toast.makeText(webView_AnbyaaStories.this,"test3",Toast.LENGTH_SHORT);
             }});
         //  url++;
         //  web_stories.loadUrl("file:///android_asset/" + url + ".html");
